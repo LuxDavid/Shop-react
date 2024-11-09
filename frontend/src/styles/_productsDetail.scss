@@ -1,0 +1,52 @@
+#detailContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    height: 48rem;
+    margin-top: 2rem;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.detail-product{
+    border: 1px solid black;
+    position: static;
+    
+    .card-image{
+        height: 18rem;
+    }
+
+    .item-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 1rem;
+
+        button{
+            font-size: 27px;
+            text-align: center;
+        }
+
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    .button-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #counter{
+        width: 4rem;
+        border: 1px solid black;
+        height: 3rem;
+        text-align: center;
+        font-size: 27px;
+        margin: 0px 0.5rem 0px 0.5rem;
+    }
+}

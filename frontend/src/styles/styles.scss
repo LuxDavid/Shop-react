@@ -1,0 +1,33 @@
+@use 'footer';
+@use 'login';
+@use 'responsiveLogin';
+@use 'productsHome';
+@use 'header';
+@use 'productsDetail';
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background: url("../assets/images/pc-fondo.jpg");
+  background-attachment: fixed;
+  background-position: 10px 130%;
+}
+
+#layout{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+  #content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 8rem;
+    
+}
+
+/*# sourceMappingURL=styles.scss.map */
