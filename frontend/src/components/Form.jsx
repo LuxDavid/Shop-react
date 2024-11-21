@@ -37,7 +37,7 @@ const loggin= async (e) => {
       console.log(data);
 
       if(data.result === true){
-       return navigate("/products")
+       return navigate("/shop/products")
       }
 
       Swal.fire({
