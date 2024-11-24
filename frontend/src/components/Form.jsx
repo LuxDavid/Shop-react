@@ -2,7 +2,6 @@ import React from 'react';
 import { useForm } from "../hooks/useForm.jsx"
 import { Global } from '../helpers/Global.jsx';
 
-import { useNavigate } from 'react-router-dom';
 import google from "../assets/images/google.png";
 import git from "../assets/images/Git.jpg";
 
@@ -14,8 +13,6 @@ const Form = () => {
 
   const { form, changed } = useForm({});
   const { auth, setAuth } = useAuth();
-
-  const navigate = useNavigate();
 
   const loggin = async (e) => {
 

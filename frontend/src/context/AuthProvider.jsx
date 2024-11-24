@@ -11,7 +11,6 @@ export const AuthProvider = ({ children }) => {
         authUser();
     }, []);
 
-
     const authUser = async () => {
         //Sacar datos usuario identificado
 
@@ -24,15 +23,27 @@ export const AuthProvider = ({ children }) => {
 
         console.log(dataUser);
 
-
         //Setear el estado de auth
         setAuth(dataUser);
+    }
+
+    const authSession = async () => {
+
+            const response = await fetch(`${Global.url}session/current`, {
+                method: 'GET',
+                credentials: 'include',
+            });
+            const dataUser = await response.json();
+
+            setAuth(dataUser);
+
     }
 
     return (<AuthContext.Provider
         value={{
             auth,
             setAuth,
+            authSession
         }}>
         {children}
     </AuthContext.Provider>
