@@ -1,9 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { Global } from '../helpers/Global.jsx';
-import Layout from '../components/layout/Layout.jsx';
-import { useNavigate}from 'react-router-dom';
-
 
 //Components
 import CardProduct from '../components/CardProduct.jsx';
@@ -11,7 +8,6 @@ import CardProduct from '../components/CardProduct.jsx';
 const ProductList = () => {
 
   const [products, setProducts] = useState([]);
-  const navigate= useNavigate();
 
   const productsFetch = async (e) => {
 

@@ -6,22 +6,27 @@ import ProductDetail from "../views/ProductDetail.jsx";
 import Login from "../views/Login.jsx";
 import Register from "../views/Register.jsx";
 import Profile from "../views/Profile.jsx";
-import Layout from "../components/layout/Layout.jsx";
+import PrivateLayout from "../components/privateLayout/Layout.jsx";
+import PublicLayout from "../components/publicLayout/Layout.jsx"
 
     const router= createBrowserRouter([
     {
         path:"/",
-        element:<Login/>,
+        element:<PublicLayout/>,
         children:[
             {
                 path:"/register",
                 element:<Register/>,
+            },
+            {
+                path:"/login",
+                element:<Login/>,
             }
         ]
     },
     {
         path:"/shop",
-        element:<Layout/>,
+        element:<PrivateLayout/>,
         children:[
             {
                 path:"products",

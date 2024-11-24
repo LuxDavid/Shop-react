@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout/Layout';
+import Layout from '../components/privateLayout/Layout.jsx';
 import ItemProfile from '../components/ItemProfile.jsx';
 import useAuth from '../hooks/useAuth.jsx';
 
@@ -9,9 +9,9 @@ const Profile = () => {
 
 
   return (
-    <Layout>
+
       <ItemProfile infoUser={auth}/>
-    </Layout>
+
   )
 }
 

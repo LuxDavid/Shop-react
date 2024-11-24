@@ -20,7 +20,7 @@ const CardProduct = ({ product }) => {
                 <ListGroup.Item className='list-element'>Disponibles: {product.stock}</ListGroup.Item>
             </ListGroup>
             <Card.Body className="button-card">
-                <Link to={`/product/${product._id}`} ><Button variant="dark">Comprar</Button></Link>
+                <Link to={`/shop/product/${product._id}`} ><Button variant="dark">Comprar</Button></Link>
             </Card.Body>
         </Card>
 

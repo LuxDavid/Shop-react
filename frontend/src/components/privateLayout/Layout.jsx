@@ -11,10 +11,11 @@ const Layout = () => {
     return (
         <div id='layout'>
             <Header/>
-            <div id='content'>
-                {auth.result ? <Outlet/> : <Navigate to="/"/>}
-            </div>
-            <Footer/>
+            <>
+                {auth.result ? <Outlet/> : <Navigate to="/login" />}
+                <Footer/>
+            </>
+            
         </div>
     )
 }

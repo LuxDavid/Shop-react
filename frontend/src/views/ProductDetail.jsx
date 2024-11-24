@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { Global } from '../helpers/Global.jsx';
 import { useParams } from "react-router-dom";
-import Layout from '../components/layout/Layout.jsx';
+import Layout from '../components/privateLayout/Layout.jsx';
 import CardDetail from '../components/CartDetail.jsx';
 
 const ProductDetail = () => {
@@ -34,12 +34,9 @@ const ProductDetail = () => {
   }, [])
 
   return (
-    <Layout>
       <div id='detailContainer'>
       <CardDetail product={product}/>
       </div>
-    </Layout>
-
   )
 }
 
